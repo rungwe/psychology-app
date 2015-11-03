@@ -2,7 +2,7 @@
 ini_set('display_errors',true);
 require("components.php");
 require "sent.php";
-date_default_timezone_set("Africa/Johannesburg");
+date_default_timezone_set("Europe/London");
 $day = strtolower(date("D"));
 $time = intval( strtolower(date("G")) );
 echo $time."  ".$day;

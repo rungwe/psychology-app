@@ -1795,7 +1795,7 @@ body.outlook p {
 						</select>
 
 		                <span>Tues:</span>
-		                <select id="tues" class="form-control" name="tue">
+		                <select id="tue" class="form-control" name="tue">
 		                 	<option value="none">None</option>
 		                 	<option value="0">00:00</option>
 							<option value="1">01:00</option>
@@ -2014,9 +2014,9 @@ body.outlook p {
                 
 	                <div class="form-inline" role="form">
 						<div class="form-group">
-							<input class="form-control" type="email" name="email" placeholder="Email" >
+							<input class="form-control" type="email" name="email" placeholder="Email" id="email">
 						</div>
-						<button type="button" onclick="register()" class="btn">Subscribe</button>
+						<button type="button" onclick="register()" class="btn" style="color: black">Subscribe</button>
 					</div>
 					</form>
 					<br>
@@ -2226,6 +2226,9 @@ body.outlook p {
             });
         });
     </script>
+    <script>
+        
+    </script>
 	<script type="text/javascript">
 		function register(){
 			if (!validate()){
@@ -2254,10 +2257,11 @@ body.outlook p {
 							    //alert(info);
 							    if(info==1){
 								    alert("subscription successfully made");
+                                    document.getElementById("email").value = "";
 							    }
 							    else{
 							
-								    alert("subscription not successfully");
+								    alert("subscription not successfully, it might be due to an incorrect email");
 							    }
 						  }
 					  }
@@ -2270,6 +2274,30 @@ body.outlook p {
 		}
 
 		function validate(){
+            var days = ["mon","tue","wed","thur","fri", "sat", "sun"];
+            var offset = new Date().getTimezoneOffset()/60;
+            document.getElementById("email").value = document.getElementById("email").value.trim();
+            var counter =0;
+            for (i =0; i<days.length; i++){
+                obj = document.getElementById(days[i]);
+                day = obj.options[obj.selectedIndex].value;
+                
+                if(day!="none"){
+                   day = parseInt(day);
+                   obj.options[obj.selectedIndex].value = day + offset; 
+                   counter+=1;
+                }
+             }
+            if(counter==0){
+                alert("Error, no time selected");
+                return false;
+                }
+            if (document.getElementById("email").value==""){
+                alert("Error, no email supplied");
+                return false;
+             }
+
+
 			return true;
 		}
 	</script>
