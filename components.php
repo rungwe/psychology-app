@@ -2285,7 +2285,6 @@ body.outlook p {
                 if(day!="none"){
                    day = parseInt(day);
                    obj.options[obj.selectedIndex].value = day + offset; 
-                   alert(day + offset); 
                    counter+=1;
                 }
              }
