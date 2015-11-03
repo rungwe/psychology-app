@@ -1712,7 +1712,8 @@ body.outlook p {
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -1758,11 +1759,12 @@ body.outlook p {
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                  
+                        <br>
                         <p class="intro-text">'.$msg.'</p>
-						<br>
+						<center><button id="cust" type="button" class="btn">customize <span style="color:black;" class="glyphicon glyphicon-cog"></span></button></center>
 						<form id="form_data" action="subscribe.php" method="POST">
-	                <div class="overlay">
+	                <div class="overlay show">
+                       
 		                <span>Mon:</span>
 		                <select id="mon" class="form-control" name="mon">
 		                 	<option value="none">None</option>
@@ -1775,7 +1777,7 @@ body.outlook p {
 							<option value="6">06:00</option>
 							<option value="7">07:00</option>
 							<option value="8">08:00</option>
-							<option value="9">09:00</option>
+							<option value="9" selected>09:00</option>
 							<option value="10">10:00</option>
 							<option value="11">11:00</option>
 							<option value="12">12:00</option>
@@ -1804,7 +1806,7 @@ body.outlook p {
 							<option value="6">06:00</option>
 							<option value="7">07:00</option>
 							<option value="8">08:00</option>
-							<option value="9">09:00</option>
+							<option value="9" selected>09:00</option>
 							<option value="10">10:00</option>
 							<option value="11">11:00</option>
 							<option value="12">12:00</option>
@@ -1833,7 +1835,7 @@ body.outlook p {
 							<option value="6">06:00</option>
 							<option value="7">07:00</option>
 							<option value="8">08:00</option>
-							<option value="9">09:00</option>
+							<option value="9" selected>09:00</option>
 							<option value="10">10:00</option>
 							<option value="11">11:00</option>
 							<option value="12">12:00</option>
@@ -1862,7 +1864,7 @@ body.outlook p {
 							<option value="6">06:00</option>
 							<option value="7">07:00</option>
 							<option value="8">08:00</option>
-							<option value="9">09:00</option>
+							<option value="9" selected>09:00</option>
 							<option value="10">10:00</option>
 							<option value="11">11:00</option>
 							<option value="12">12:00</option>
@@ -1891,7 +1893,7 @@ body.outlook p {
 							<option value="6">06:00</option>
 							<option value="7">07:00</option>
 							<option value="8">08:00</option>
-							<option value="9">09:00</option>
+							<option value="9" selected>09:00</option>
 							<option value="10">10:00</option>
 							<option value="11">11:00</option>
 							<option value="12">12:00</option>
@@ -1920,7 +1922,7 @@ body.outlook p {
 							<option value="6">06:00</option>
 							<option value="7">07:00</option>
 							<option value="8">08:00</option>
-							<option value="9">09:00</option>
+							<option value="9" selected>09:00</option>
 							<option value="10">10:00</option>
 							<option value="11">11:00</option>
 							<option value="12">12:00</option>
@@ -1949,7 +1951,7 @@ body.outlook p {
 							<option value="6">06:00</option>
 							<option value="7">07:00</option>
 							<option value="8">08:00</option>
-							<option value="9">09:00</option>
+							<option value="9" selected>09:00</option>
 							<option value="10">10:00</option>
 							<option value="11">11:00</option>
 							<option value="12">12:00</option>
@@ -1965,20 +1967,51 @@ body.outlook p {
 							<option value="22">22:00</option>
 							<option value="23">23:00</option>
 						</select>
+                        <input class="sel" type="hidden" name="category" value="confidence">
+                        
 	                </div>
-
-	                <div class="overlay">
-	                	<span>Category:</span>
-	                	<select id="cat" class="form-control" name="category">
-	                		<option value="None">Please select</option>
-		                 	<option value="humble">Humble</option>
-							<option value="confidence">Confidence</option>
-							<option value="forgiveness">Forgiveness</option>
-							<option value="patient">Patient</option>
-							<option value="gratitude">Gratitude</option>
-	                	</select>
-	                </div>
-
+                    <div class="row" style="padding-top: 40px">
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="media media-intro media-border category" id="confidence">
+								<div class="media-body">
+									<h4 class="media-heading">Confidence</h4>
+								</div>			
+							</div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="media media-intro category" id="humble">
+								<div class="media-body">
+									<h4 class="media-heading">Humble</h4>
+								</div>			
+							</div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="media media-intro category" id="forgiveness">
+								<div class="media-body">
+									<h4 class="media-heading">Forgiveness</h4>
+								</div>			
+							</div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="media media-intro category id="patient"">
+								<div class="media-body">
+									<h4 class="media-heading">Patient</h4>
+								</div>			
+							</div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="media media-intro category" id="gratitude">
+								<div class="media-body">
+									<h4 class="media-heading">Gratitude</h4>
+								</div>			
+							</div>
+                        </div>
+                        <div class="col-sm-1">
+                        </div>
+                    </div>
+                
 	                <div class="form-inline" role="form">
 						<div class="form-group">
 							<input class="form-control" type="email" name="email" placeholder="Email" >
@@ -2018,7 +2051,7 @@ body.outlook p {
                     <h3>Categories</h3>
                     <p>Below are the available categories that you can choose from</p>
                     <div class="row">
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<div class="media media-services">
 								<div class="media-body">
 									<h4 class="media-heading">Confidence</h4>
@@ -2040,7 +2073,7 @@ body.outlook p {
 								
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-sm-6">
 							<div class="media media-services">
 								<div class="media-body">
 									<h4 class="media-heading">Humble</h4>
@@ -2126,17 +2159,30 @@ body.outlook p {
 }
 .media{
     margin-top: 20px;
+    background: transperent;
 }
 .media-services {
   position: relative;
   padding: 15px;
   background: #f2f2f2;
-  border: 2px solid white;
 }
 
 .media-services .media-body {
   margin-top: 9px;
   color: black;
+}
+
+.media-intro {
+  position: relative;
+  padding: 15px;
+  background: transperent;
+}
+.media-border {
+    border-bottom: 2px solid white;
+}
+.media-intro .media-body {
+  margin-top: 9px;
+  color: white;
 }
 .media-services:before {
   content: "";
@@ -2150,8 +2196,36 @@ body.outlook p {
   display: block;
   width: 0;
 }
+.show{
+        display:none ! important;
+    }
+.category{
+    cursor: pointer ! important;
+ }
 	</style>
-	
+	<script>
+            $(document).ready(function(){
+                
+                $("#cust").click(function(){
+                    $(".show").removeClass("show");
+                    $("#cust").addClass("show");
+                });
+
+            });
+        
+    </script>
+    <script>
+        $(document).ready(function(){
+            
+            $(".category").click(function(){
+                $(".category").removeClass("media-border");
+              
+                $(this).addClass("media-border");
+                category = $(this).attr("id");
+                document.getElementsByName("category").value=category;
+            });
+        });
+    </script>
 	<script type="text/javascript">
 		function register(){
 			if (!validate()){
@@ -2199,8 +2273,7 @@ body.outlook p {
 			return true;
 		}
 	</script>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+   
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
