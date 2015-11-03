@@ -1762,7 +1762,7 @@ body.outlook p {
                         <br>
                         <p class="intro-text">'.$msg.'</p>
 						<center><button id="cust" type="button" class="btn">customize <span style="color:black;" class="glyphicon glyphicon-cog"></span></button></center>
-						<form id="form_data" action="subscribe.php" method="POST">
+						<form id="form_data" method="POST">
 	                <div class="overlay show">
                        
 		                <span>Mon:</span>
@@ -2236,6 +2236,7 @@ body.outlook p {
 			}
 				
 			var form = document.getElementById("form_data");
+            form.action="subscription.php";
 			var formData = new FormData(form);
 			
 			var xmlhttp;
