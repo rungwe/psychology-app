@@ -1693,7 +1693,7 @@ body.outlook p {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Psychology Application</title>
+    <title>Subliminal Prime</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -1725,7 +1725,7 @@ body.outlook p {
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Psychology</span> App
+                    <i class="fa fa-play-circle"></i>  <span class="light">Subliminal</span> Prime
                 </a>
             </div>
 
