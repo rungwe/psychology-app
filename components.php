@@ -10,7 +10,7 @@ function send_questions($to,$body){
     $mailer = Swift_Mailer::newInstance($transport);
 
     $message = Swift_Message::newInstance('Daily Questions')
-      ->setFrom(array("kchaddy871@gmail.com" => 'Psycology Application'))
+      ->setFrom(array("kchaddy871@gmail.com" => 'Subliminal Prime'))
       ->setTo(array($to))
       ->setBody($body,'text/html');
 
@@ -749,7 +749,7 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns" style="background: black; height: 40px; text-align: center; color: #fff">
-                              <div style="font-size: 30px; padding-top: 15px">Something</div>
+                              <div style="font-size: 30px; padding-top: 15px">Subliminal Prime</div>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                             </td>
@@ -803,7 +803,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <p class="lead">Thanks,<br>Something Team</p>
+                            <p class="lead">Thanks,<br>Subliminal Prime Team</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -1566,7 +1566,7 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns" style="background: black; height: 40px; text-align: center; color: #fff">
-                              <div style="font-size: 30px; padding-top: 15px">Something</div>
+                              <div style="font-size: 30px; padding-top: 15px">Subliminal Prime </div>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                             </td>
@@ -1630,7 +1630,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td style="padding-top: 20px">
-                            <p class="lead">Thanks,<br>Something Team</p>
+                            <p class="lead">Thanks,<br>Subliminal Prime Team</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -2106,7 +2106,7 @@ body.outlook p {
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Psychology App</h2>
                 <p>Feel free to contact us if you have any questions</p>
-                <p><a href="mailto:feedback@psychology.com">feedback@psychology.com</a>
+                <p><a href="mailto:feedback@subliminalprime.com">subliminalprime.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
@@ -2128,7 +2128,7 @@ body.outlook p {
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Psychology App 2015</p>
+            <p>Copyright &copy; Subliminal Prime App 2015</p>
         </div>
     </footer>
 
