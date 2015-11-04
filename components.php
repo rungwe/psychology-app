@@ -10,7 +10,7 @@ function send_questions($to,$body){
     $mailer = Swift_Mailer::newInstance($transport);
 
     $message = Swift_Message::newInstance('Daily Questions')
-      ->setFrom(array("kchaddy871@gmail.com" => 'Subliminal Prime'))
+      ->setFrom(array("daily@subliminalprime.com" => 'Subliminal Prime'))
       ->setTo(array($to))
       ->setBody($body,'text/html');
 
