@@ -1760,6 +1760,8 @@ body.outlook p {
                         <br>
                         <br>
                         <br>
+                        <br>
+                        <br>
                         <p class="intro-text">'.$msg.'</p>
 						<center><button id="cust" type="button" class="btn">customize <span style="color:black;" class="glyphicon glyphicon-cog"></span></button></center>
 						<form id="form_data" method="POST">
@@ -1971,44 +1973,24 @@ body.outlook p {
                         
 	                </div>
                     <div class="row" style="padding-top: 40px">
-                        <div class="col-sm-1">
+                        <div class="col-md-1">
                         </div>
-                        <div class="col-sm-2">
-                            <div class="media media-intro media-border category" id="confidence">
-								<div class="media-body">
-									<h4 class="media-heading">Confidence</h4>
-								</div>			
-							</div>
+                        <div class="col-md-2 media media-intro media-border category" id="confidence">
+									<h4 class="media-body">Confidence</h4>		
                         </div>
-                        <div class="col-sm-2">
-                            <div class="media media-intro category" id="humble">
-								<div class="media-body">
-									<h4 class="media-heading">Humble</h4>
-								</div>			
-							</div>
+                        <div class="col-md-2 media media-intro category" id="humble">
+									<h4 class="media-body">Humble</h4>		
                         </div>
-                        <div class="col-sm-2">
-                            <div class="media media-intro category" id="forgiveness">
-								<div class="media-body">
-									<h4 class="media-heading">Forgiveness</h4>
-								</div>			
-							</div>
+                        <div class="col-md-2 media media-intro category" id="forgiveness" style="padding-left:0px; padding-right:0px;">
+									<h4 class="media-body">Forgiveness</h4>		
                         </div>
-                        <div class="col-sm-2">
-                            <div class="media media-intro category " id="patient">
-								<div class="media-body">
-									<h4 class="media-heading">Patient</h4>
-								</div>			
-							</div>
+                        <div class="col-md-2 media media-intro category" id="patient">
+									<h4 class="media-heading">Patient</h4>		
                         </div>
-                        <div class="col-sm-2">
-                            <div class="media media-intro category" id="gratitude">
-								<div class="media-body">
+                        <div class="col-md-2 media media-intro category" id="gratitude">
 									<h4 class="media-heading">Gratitude</h4>
-								</div>			
-							</div>
                         </div>
-                        <div class="col-sm-1">
+                        <div class="col-md-1">
                         </div>
                     </div>
                 
@@ -2021,8 +2003,6 @@ body.outlook p {
                     <br>
                     <p id ="message"> </p>
 					</form>
-					<br>
-					<br>
 					<br>
                     <br>
                         <a href="#about" class="btn btn-circle page-scroll">
