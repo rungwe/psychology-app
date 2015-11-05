@@ -1967,7 +1967,7 @@ body.outlook p {
 							<option value="22">22:00</option>
 							<option value="23">23:00</option>
 						</select>
-                        <input class="sel" type="hidden" name="category" value="confidence">
+                        <input id="sel" type="hidden" name="category" value="confidence">
                         
 	                </div>
                     <div class="row" style="padding-top: 40px">
@@ -2221,8 +2221,9 @@ body.outlook p {
                 $(".category").removeClass("media-border");
               
                 $(this).addClass("media-border");
-                category = $(this).attr("id");
-                document.getElementsByName("category").value=category;
+                var category = $(this).attr("id");
+                //alert(category);
+                document.getElementById("sel").value=category;
             });
         });
     </script>

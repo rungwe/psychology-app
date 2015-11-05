@@ -2,7 +2,7 @@
     
     ini_set('display_errors',true);
 	require "components.php" ;
-	$fields = array("email","category","mon","tue","wed","thur","fri","sat","sun");
+	$fields = array("email","category","mon","tue","wed","thu","fri","sat","sun");
 	if(!empty($_POST) ){
 		if(empty($_POST["email"])){
 			echo "no email supplied";
@@ -17,7 +17,7 @@
 			echo $db->connect_error."<br>"."connection not successfull";
 			
 		}
-		$stmt = $db->prepare("INSERT INTO users (email,category, mon,tue,wed,thur,fri,sat,sun) VALUES(?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE mon =?, tue=?, wed=?,thur=?,fri=?,sat=?,sun=?,category=?");
+		$stmt = $db->prepare("INSERT INTO users (email,category, mon,tue,wed,thu,fri,sat,sun) VALUES(?,?,?,?,?,?,?,?,?) ON DUPLICATE KEY UPDATE mon =?, tue=?, wed=?,thur=?,fri=?,sat=?,sun=?,category=?");
 		 if(!$stmt)  //if there is an error, then it will be shown!. 
          { // show error                                                                                                       
           echo $db->error;
@@ -31,7 +31,7 @@
 			}
 		}
 		
-		$stmt->bind_param('ssiiiiiiiiiiiiiis',$_POST["email"],$_POST["category"],$_POST["mon"],$_POST["tue"],$_POST["wed"],$_POST["thur"],$_POST["fri"],$_POST["sat"],$_POST["sun"],$_POST["mon"],$_POST["tue"],$_POST["wed"],$_POST["thur"],$_POST["fri"],$_POST["sat"],$_POST["sun"],$_POST["category"]);
+		$stmt->bind_param('ssiiiiiiiiiiiiiis',$_POST["email"],$_POST["category"],$_POST["mon"],$_POST["tue"],$_POST["wed"],$_POST["thu"],$_POST["fri"],$_POST["sat"],$_POST["sun"],$_POST["mon"],$_POST["tue"],$_POST["wed"],$_POST["thur"],$_POST["fri"],$_POST["sat"],$_POST["sun"],$_POST["category"]);
 		$response = $stmt->execute();
 		
 		if($response){
