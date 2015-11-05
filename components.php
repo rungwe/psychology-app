@@ -1700,6 +1700,7 @@ body.outlook p {
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -2020,6 +2021,7 @@ body.outlook p {
 					<br>
 					<br>
 					<br>
+                    <br>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -2045,8 +2047,7 @@ body.outlook p {
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Subliminal Prime Team</h2>
-                <p>Feel free to contact us if you have any questions</p>
+                <h2>Questions, Comments, Suggestions</h2>
                 <p><a href="mailto:info@subliminalprime.com">info@subliminalprime.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
@@ -2068,62 +2069,8 @@ body.outlook p {
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Psychology App 2015</p>
-        </div>
     </footer>
 
-	<style>
-			.overlay{
-    padding-top: 30px;
-}
-
-.overlay span {
-    font-size: 15px;
-    color: white;
-    display: inline-block;
-    padding: 5px;
-}
-.overlay .form-control {
-    border: 0 none;
-    display: inline-block;
-    width: auto;
-}
-
-.form-inline{
-    padding-top: 40px;
-}
-
-.form-inline .form-control {
-    border: 0 none;
-    display: inline-block;
-    width: 400px;
-}
-.media{
-    margin-top: 20px;
-    background: transperent;
-}
-
-.media-intro {
-  position: relative;
-  padding: 15px;
-  background: transperent;
-}
-.media-border {
-    border-bottom: 2px solid white;
-}
-.media-intro .media-body {
-  margin-top: 9px;
-  color: white;
-}
-
-.show{
-        display:none ! important;
-    }
-.category{
-    cursor: pointer ! important;
- }
-	</style>
 	<script>
             $(document).ready(function(){
                 

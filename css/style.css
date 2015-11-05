@@ -1,0 +1,50 @@
+
+.overlay{
+    padding-top: 30px;
+}
+
+.overlay span {
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+}
+.overlay .form-control {
+    border: 0 none;
+    display: inline-block;
+    width: auto;
+}
+
+.form-inline{
+    padding-top: 40px;
+}
+
+.form-inline .form-control {
+    border: 0 none;
+    display: inline-block;
+    width: 400px;
+}
+.media{
+    margin-top: 20px;
+    background: transperent;
+}
+
+.media-intro {
+  position: relative;
+  padding: 15px;
+  background: transperent;
+}
+.media-border {
+    border-bottom: 2px solid white;
+}
+.media-intro .media-body {
+  margin-top: 9px;
+  color: white;
+}
+
+.show{
+        display:none ! important;
+    }
+.category{
+    cursor: pointer ! important;
+ }
