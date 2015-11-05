@@ -9,7 +9,7 @@
    // it's not
     echo "safe mode is off";
 }
-  echo shell_exec("/usr/bin/git pull 2>&1");
+  echo shell_exec("/usr/bin/git pull --no-edit origin master 2>&1");
 fwrite(STDOUT, ‘foo’)
 
 
