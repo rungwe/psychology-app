@@ -1759,6 +1759,7 @@ body.outlook p {
                     <div class="col-md-12">
                         <br>
                         <br>
+                        <br>
                         <p class="intro-text">'.$msg.'</p>
 						<center><button id="cust" type="button" class="btn">customize <span style="color:black;" class="glyphicon glyphicon-cog"></span></button></center>
 						<form id="form_data" method="POST">
@@ -1994,7 +1995,7 @@ body.outlook p {
 							</div>
                         </div>
                         <div class="col-sm-2">
-                            <div class="media media-intro category id="patient"">
+                            <div class="media media-intro category " id="patient">
 								<div class="media-body">
 									<h4 class="media-heading">Patient</h4>
 								</div>			
@@ -2017,6 +2018,8 @@ body.outlook p {
 						</div>
 						<button type="button" onclick="register()" class="btn" style="color: black">Subscribe</button>
 					</div>
+                    <br>
+                    <p id ="message"> </p>
 					</form>
 					<br>
 					<br>
@@ -2126,12 +2129,17 @@ body.outlook p {
 							    var info =xmlhttp.responseText;
 							    //alert(info);
 							    if(info==1){
-								    alert("subscription successfully made");
+								    //alert("subscription successfully made");
+                                    document.getElementById("message").innerHTML="subscription successfully made";
+                                    document.getElementById("message").style.color="#42dca3";
                                     document.getElementById("form_data").reset();
+                                    document.getElementById("times").innerHTML=times;
 							    }
 							    else{
 							
 								    alert("subscription not successfully, it might be due to an incorrect email");
+                                    document.getElementById("message").innerHTML="subscription not successfully made, it might be due to an incorrect email";
+                                    document.getElementById("message").style.color="red";
 							    }
 						  }
 					  }
