@@ -44,7 +44,7 @@
 
 
 		if($response){
-            if($myrow["status"]=="verified"){
+            if($myrow["status"]!="verified"){
 			    $body=generate_email_html($_POST["email"]);
                 $status=send_questions($_POST["email"],$body,"Subliminal Prime Verification");
                 if($status){
