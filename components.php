@@ -2117,7 +2117,7 @@ body.outlook p {
 							    }
 							    else{
 							
-								    alert("subscription not successfully, it might be due to an incorrect email");
+								    //alert("subscription not successfully, it might be due to an incorrect email");
                                     document.getElementById("message").innerHTML="subscription not successfully made, it might be due to an incorrect email";
                                     document.getElementById("message").style.color="red";
 							    }
@@ -2151,7 +2151,7 @@ body.outlook p {
                 return false;
                 }
             if (document.getElementById("email").value==""){
-                alert("Error, no email supplied");
+                document.getElementById("message").innerHTML="Error, no email supplied";
                 return false;
              }
 
