@@ -1985,10 +1985,10 @@ body.outlook p {
 									<h4 class="media-body">Forgiveness</h4>		
                         </div>
                         <div class="col-md-2 media media-intro category" id="patient">
-									<h4 class="media-heading">Patient</h4>		
+									<h4 class="media-body">Patient</h4>		
                         </div>
                         <div class="col-md-2 media media-intro category" id="gratitude">
-									<h4 class="media-heading">Gratitude</h4>
+									<h4 class="media-body">Gratitude</h4>
                         </div>
                         <div class="col-md-1">
                         </div>
@@ -2027,7 +2027,7 @@ body.outlook p {
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
+    <section id="contact" class="container content-section">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Questions, Comments, Suggestions</h2>
