@@ -181,6 +181,11 @@ a:focus {
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
+    .content-section {
+    height: 100%;
+    text-align: center;
+}
+    
 }
 
 .btn-circle {
@@ -260,6 +265,7 @@ a:focus {
 .content-section {
     padding-top: 100px;
     height: 100%;
+    text-align: center;
 }
 
 #map {
