@@ -2151,7 +2151,7 @@ body.outlook p {
                 return false;
                 }
             if (document.getElementById("email").value==""){
-                alert("Error, no email supplied");
+                document.getElementById("message").innerHTML="Error, no email supplied";
                 return false;
              }
 
