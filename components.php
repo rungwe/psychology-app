@@ -1716,7 +1716,7 @@ body.outlook p {
     <script src="js/jquery.js"></script>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" onload="init()" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -1761,7 +1761,7 @@ body.outlook p {
                         <p class="intro-text">'.$msg.'</p>
 						<center><button id="cust" type="button" class="btn">customize <span style="color:black;" class="glyphicon glyphicon-cog"></span></button></center>
 						<form id="form_data" method="POST">
-	                <div class="overlay show">
+	                <div id ="times" class="overlay show">
                        
 		                <span>Mon:</span>
 		                <select id="mon" class="form-control" name="mon">
@@ -2189,7 +2189,7 @@ body.outlook p {
 							    //alert(info);
 							    if(info==1){
 								    alert("subscription successfully made");
-                                    document.getElementById("email").value = "";
+                                    document.getElementById("form_data").reset();
 							    }
 							    else{
 							
@@ -2232,6 +2232,11 @@ body.outlook p {
 
 			return true;
 		}
+
+        function init(){
+            times = document.getElementById("times").innerHTML;
+
+        }
 	</script>
    
 
