@@ -749,7 +749,7 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns" style="background: black; height: 40px; text-align: center; color: #fff">
-                              <div style="font-size: 30px; padding-top: 15px">Something</div>
+                              <div style="font-size: 30px; padding-top: 15px">Subliminal Prime</div>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                             </td>
@@ -803,7 +803,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <p class="lead">Thanks,<br>Something Team</p>
+                            <p class="lead">Thanks,<br>Subliminal Prime Team</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -1595,7 +1595,7 @@ body.outlook p {
                         <tr>
                           <td>
                             <h1 style="padding-top: 20px">Hi,</h1>
-                						<p class="lead" style="padding-top: 15px">You are receiving this email because you have just subscribed to "Something". If you did not subscribe to "Something", you can safely ignore this email.</p>
+                						<p class="lead" style="padding-top: 15px">You are receiving this email because you have just subscribed to Subliminal Prime. If you did not subscribe to Subliminal Prime, you can safely ignore this email.</p>
                 						<p class="lead">This email was sent to you in order for you to verify it.</p>
                           </td>
                           <td class="expander"></td>
@@ -1630,7 +1630,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td style="padding-top: 20px">
-                            <p class="lead">Thanks,<br>Something Team</p>
+                            <p class="lead">Thanks,<br>Subliminal Prime Team</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
