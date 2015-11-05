@@ -31,13 +31,15 @@
 
 .media-intro {
   position: relative;
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background: transperent;
 }
 .media-border {
     border: 2px solid white;
 }
 .media-intro .media-body {
+   text-align: center;
   margin-top: 9px;
   color: white;
 }
