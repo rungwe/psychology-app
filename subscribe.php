@@ -49,6 +49,7 @@
                 $status=send_questions($_POST["email"],$body,"Subliminal Prime Verification");
                 if($status){
                     echo 1;
+                    exit();
                 }
                 else{
                     echo 0;
