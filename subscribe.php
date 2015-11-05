@@ -34,9 +34,21 @@
 		$stmt->bind_param('ssiiiiiiiiiiiiiis',$_POST["email"],$_POST["category"],$_POST["mon"],$_POST["tue"],$_POST["wed"],$_POST["thu"],$_POST["fri"],$_POST["sat"],$_POST["sun"],$_POST["mon"],$_POST["tue"],$_POST["wed"],$_POST["thu"],$_POST["fri"],$_POST["sat"],$_POST["sun"],$_POST["category"]);
 		$response = $stmt->execute();
 		
+
+        // check user if verified 
+        $user = $db->prepare("SELECT status from users where email= ?");
+        $user->bind_param("s",$_POST["email"]);
+        $response = $user->execute();
+        $result = $user->get_result();
+        $myrow = $result->fetch_assoc();
+
+
 		if($response){
-			$body=generate_email_html($_POST["email"]);
-            send_questions($_POST["email"],$body);
+            if($myrow["status"]!="verified"){
+			    $body=generate_email_html($_POST["email"]);
+                send_questions($_POST["email"],$body,"Subliminal Prime Verification");
+            }
+            
             echo 1;
 		}
 		else{

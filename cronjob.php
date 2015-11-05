@@ -39,7 +39,7 @@ while ($myrow = $result->fetch_assoc()) {
 	
 	$questions=get_questions( $myrow["category"]);
 	$email_html = generate_email($questions,  $myrow["category"],$myrow["email"]);
-	$status = send_questions($myrow["email"], $email_html);
+	$status = send_questions($myrow["email"], $email_html, "Daily Subliminal Primes");
     if ($status){
         //echo "email sent";
         $msg.="\nemail sent successfully to ".$myrow["email"]." \t for category ".$myrow["category"]."\t".strtolower(date("c"))."\n";

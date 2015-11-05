@@ -1,6 +1,6 @@
 <?php
 
-function send_questions($to,$body){
+function send_questions($to,$body,$heading){
     require_once 'Swift-5.0.1/lib/swift_required.php';
     
     $transport = Swift_SmtpTransport::newInstance('email-smtp.us-west-2.amazonaws.com', 587, "tls")
@@ -9,8 +9,8 @@ function send_questions($to,$body){
 
     $mailer = Swift_Mailer::newInstance($transport);
 
-    $message = Swift_Message::newInstance('Daily Questions')
-      ->setFrom(array("kchaddy871@gmail.com" => 'Psycology Application'))
+    $message = Swift_Message::newInstance($heading)
+      ->setFrom(array("daily@subliminalprime.com" => 'Subliminal Prime'))
       ->setTo(array($to))
       ->setBody($body,'text/html');
 
