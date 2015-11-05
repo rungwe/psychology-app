@@ -2077,6 +2077,7 @@ body.outlook p {
 			.overlay{
     padding-top: 30px;
 }
+
 .overlay span {
     font-size: 15px;
     color: white;
@@ -2101,16 +2102,6 @@ body.outlook p {
 .media{
     margin-top: 20px;
     background: transperent;
-}
-.media-services {
-  position: relative;
-  padding: 15px;
-  background: #f2f2f2;
-}
-
-.media-services .media-body {
-  margin-top: 9px;
-  color: black;
 }
 
 .media-intro {
