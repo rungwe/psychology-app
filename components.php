@@ -1851,7 +1851,7 @@ body.outlook p {
 						</select>
 
 		                <span>Thur:</span>
-		                <select id="thur" class="form-control" name="thu">
+		                <select id="thu" class="form-control" name="thu">
 		                 	<option value="none">None</option>
 		                 	<option value="0">00:00</option>
 							<option value="1">01:00</option>
@@ -2206,7 +2206,7 @@ body.outlook p {
 		}
 
 		function validate(){
-            var days = ["mon","tue","wed","thur","fri", "sat", "sun"];
+            var days = ["mon","tue","wed","thu","fri", "sat", "sun"];
             var offset = new Date().getTimezoneOffset()/60;
             document.getElementById("email").value = document.getElementById("email").value.trim();
             var counter =0;
