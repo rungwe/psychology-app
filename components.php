@@ -2045,9 +2045,9 @@ body.outlook p {
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Psychology App</h2>
+                <h2>Contact Subliminal Prime Team</h2>
                 <p>Feel free to contact us if you have any questions</p>
-                <p><a href="mailto:feedback@psychology.com">feedback@psychology.com</a>
+                <p><a href="mailto:info@subliminalprime.com">info@subliminalprime.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
