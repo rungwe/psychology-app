@@ -2055,13 +2055,13 @@ body.outlook p {
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="https://twitter.com" class="btn btn-default btn-lg"><i class="fa fa-twitter-square fa-fw" style="color:#4099FF"></i> <span class="network-name">Twitter</span></a>
                     </li>
                     <li>
-                        <a href="https://facebook.com" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                        <a href="https://facebook.com" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw " style="color:#3B5998"></i> <span class="network-name">Facebook</span></a>
                     </li>
                     <li>
-                        <a href="https://plus.google.com" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        <a href="https://plus.google.com" class="btn btn-default btn-lg"><i class="fa fa-google-plus-square fa-fw" style="color:#D34836"></i> <span class="network-name">Google+</span></a>
                     </li>
                 </ul>
             </div>
