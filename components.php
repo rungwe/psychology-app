@@ -10,7 +10,7 @@ function send_questions($to,$body){
     $mailer = Swift_Mailer::newInstance($transport);
 
     $message = Swift_Message::newInstance('Daily Questions')
-      ->setFrom(array("daily@subliminalprime.com" => 'Subliminal Prime'))
+      ->setFrom(array("kchaddy871@gmail.com" => 'Psycology Application'))
       ->setTo(array($to))
       ->setBody($body,'text/html');
 
@@ -749,7 +749,7 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns" style="background: black; height: 40px; text-align: center; color: #fff">
-                              <div style="font-size: 30px; padding-top: 15px">Subliminal Prime</div>
+                              <div style="font-size: 30px; padding-top: 15px">Something</div>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                             </td>
@@ -803,7 +803,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <p class="lead">Thanks,<br>Subliminal Prime Team</p>
+                            <p class="lead">Thanks,<br>Something Team</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -1566,7 +1566,7 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns" style="background: black; height: 40px; text-align: center; color: #fff">
-                              <div style="font-size: 30px; padding-top: 15px">Subliminal Prime </div>
+                              <div style="font-size: 30px; padding-top: 15px">Something</div>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                             </td>
@@ -1630,7 +1630,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td style="padding-top: 20px">
-                            <p class="lead">Thanks,<br>Subliminal Prime Team</p>
+                            <p class="lead">Thanks,<br>Something Team</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -1680,7 +1680,7 @@ body.outlook p {
 
 
 
-    function main_page($msg="Subscribe and receive pyschology questions through email on times that suite you"){
+    function main_page($msg="SubliminalPrime is a psychological service that uses “scrambled sentences” as a diversion and a means to  influence or prime ones behavior, thoughts, or capabilities."){
         
         $page='<!DOCTYPE html>
 <html lang="en">
@@ -1741,9 +1741,6 @@ body.outlook p {
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Services</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -1759,6 +1756,7 @@ body.outlook p {
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
+                        <br>
                         <br>
                         <p class="intro-text">'.$msg.'</p>
 						<center><button id="cust" type="button" class="btn">customize <span style="color:black;" class="glyphicon glyphicon-cog"></span></button></center>
@@ -1853,7 +1851,7 @@ body.outlook p {
 						</select>
 
 		                <span>Thur:</span>
-		                <select id="thur" class="form-control" name="thur">
+		                <select id="thur" class="form-control" name="thu">
 		                 	<option value="none">None</option>
 		                 	<option value="0">00:00</option>
 							<option value="1">01:00</option>
@@ -2043,70 +2041,13 @@ body.outlook p {
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h3>Categories</h3>
-                    <p>Below are the available categories that you can choose from</p>
-                    <div class="row">
-						<div class="col-sm-6">
-							<div class="media media-services">
-								<div class="media-body">
-									<h4 class="media-heading">Confidence</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, eligendi ipsa.</p>
-								</div>
-								
-							</div>
-							<div class="media media-services">
-								<div class="media-body">
-									<h4 class="media-heading">Forgiveness</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, eligendi ipsa.</p>
-								</div>
-							</div>
-							<div class="media media-services">
-								<div class="media-body">
-									<h4 class="media-heading">Patient</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, eligendi ipsa.</p>
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="media media-services">
-								<div class="media-body">
-									<h4 class="media-heading">Humble</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, eligendi ipsa.</p>
-								</div>
-								
-							</div>
-							<div class="media media-services">
-								<div class="media-body">
-									<h4 class="media-heading">Gratitude</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, eligendi ipsa. </p>
-								</div>
-							</div>
-							<div class="media media-services">
-								<div class="media-body">
-									<h4 class="media-heading">Gratitude</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, eligendi ipsa. </p>
-								</div>
-							</div>
-						</div>
-					</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Psychology App</h2>
                 <p>Feel free to contact us if you have any questions</p>
-                <p><a href="mailto:feedback@subliminalprime.com">subliminalprime.com</a>
+                <p><a href="mailto:feedback@psychology.com">feedback@psychology.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
@@ -2128,7 +2069,7 @@ body.outlook p {
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Subliminal Prime App 2015</p>
+            <p>Copyright &copy; Psychology App 2015</p>
         </div>
     </footer>
 
@@ -2184,18 +2125,7 @@ body.outlook p {
   margin-top: 9px;
   color: white;
 }
-.media-services:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-width: 0 25px 25px 0;
-  border-style: solid;
-  border-color: white white #cccccc #cccccc;
-  background: #cccccc;
-  display: block;
-  width: 0;
-}
+
 .show{
         display:none ! important;
     }
