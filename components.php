@@ -1,6 +1,6 @@
 <?php
 
-function send_questions($to,$body){
+function send_questions($to,$body,$heading){
     require_once 'Swift-5.0.1/lib/swift_required.php';
     
     $transport = Swift_SmtpTransport::newInstance('email-smtp.us-west-2.amazonaws.com', 587, "tls")
@@ -9,8 +9,8 @@ function send_questions($to,$body){
 
     $mailer = Swift_Mailer::newInstance($transport);
 
-    $message = Swift_Message::newInstance('Daily Questions')
-      ->setFrom(array("kchaddy871@gmail.com" => 'Psycology Application'))
+    $message = Swift_Message::newInstance($heading)
+      ->setFrom(array("daily@subliminalprime.com" => 'Subliminal Prime'))
       ->setTo(array($to))
       ->setBody($body,'text/html');
 
@@ -2045,9 +2045,9 @@ body.outlook p {
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Psychology App</h2>
+                <h2>Contact Subliminal Prime Team</h2>
                 <p>Feel free to contact us if you have any questions</p>
-                <p><a href="mailto:feedback@psychology.com">feedback@psychology.com</a>
+                <p><a href="mailto:info@subliminalprime.com">info@subliminalprime.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
