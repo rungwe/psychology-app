@@ -5,7 +5,6 @@ require "sent.php";
 date_default_timezone_set("Europe/London");
 $day = strtolower(date("D"));
 $time = intval( strtolower(date("G")) );
-echo $time."  ".$day;
 $status = "verified";
 $out = fopen("debug.txt","a+");
 $msg = "";
@@ -43,7 +42,7 @@ while ($myrow = $result->fetch_assoc()) {
 	$status = send_questions($myrow["email"], $email_html);
     if ($status){
         //echo "email sent";
-        $msg.="\nemail sent successfully to ".$myrow["email"]." \t for category ".$myrow["category"]."\n";
+        $msg.="\nemail sent successfully to ".$myrow["email"]." \t for category ".$myrow["category"]."\t".strtolower(date("c"))."\n";
        // echo "email sent successfully to ".$myrow["email"]." \t for category ".$myrow["category"]."\n";
     }
     else{
