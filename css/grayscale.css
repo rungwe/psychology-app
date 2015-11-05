@@ -143,7 +143,7 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    min-height: 650px;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
     color: #fff;
@@ -258,8 +258,8 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 150px;
-    min-height: 650px;
+    padding-top: 100px;
+    height: 100%;
 }
 
 #map {
@@ -271,10 +271,6 @@ a:focus {
 @media(min-width:767px) {
     .content-section {
         padding-top: 250px;
-    }
-
-    .download-section {
-        padding: 100px 0;
     }
 
     #map {
