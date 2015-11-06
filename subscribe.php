@@ -57,8 +57,21 @@
                     
                 }
             }
+
+            else{
+                $body=generate_email_prefence($_POST["email"]);
+                $status=send_questions($_POST["email"],$body,"Preference update");
+                if($status){
+                    echo 1;
+                    exit();
+                }
+                else{
+                    echo 0;
+                    exit();
+                    
+                }
+            }
             
-            echo 1;
 		}
 		else{
 			echo 0;
