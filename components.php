@@ -745,7 +745,7 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns" style="background: black; height: 40px; text-align: center; color: #fff">
-                              <div style="font-size: 30px; padding-top: 15px">Something</div>
+                              <div style="font-size: 30px; padding-top: 15px">Subliminal Prime</div>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                             </td>
@@ -2378,7 +2378,7 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td class="six sub-columns" style="background: black; height: 40px; text-align: center; color: #fff">
-                              <div style="font-size: 30px; padding-top: 15px">Something</div>
+                              <div style="font-size: 30px; padding-top: 15px">Subliminal Prime</div>
                             </td>
                             <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
                             </td>
