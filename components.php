@@ -2919,7 +2919,7 @@ body.outlook p {
 							{
 							 
 							    var info =xmlhttp.responseText;
-							    //alert(info);
+							    alert(info);
 							    if(info==1){
 								    //alert("subscription successfully made");
                                     document.getElementById("message").innerHTML="subscription successfully made";

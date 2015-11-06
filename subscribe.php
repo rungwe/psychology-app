@@ -59,7 +59,7 @@
             }
 
             else{
-                $body=generate_email_prefence($_POST["email"]);
+                $body=generate_email_preference($_POST["email"]);
                 $status=send_questions($_POST["email"],$body,"Preference update");
                 if($status){
                     echo 1;
