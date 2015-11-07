@@ -2791,13 +2791,13 @@ body.outlook p {
 									<h4 class="media-body">Confidence</h4>		
                         </div>
                         <div class="col-md-2 media media-intro category" id="humble">
-									<h4 class="media-body">Humble</h4>		
+									<h4 class="media-body">Humbleness</h4>		
                         </div>
                         <div class="col-md-2 media media-intro category" id="forgiveness" style="padding-left:0px; padding-right:0px;">
 									<h4 class="media-body">Forgiveness</h4>		
                         </div>
                         <div class="col-md-2 media media-intro category" id="patient">
-									<h4 class="media-body">Patient</h4>		
+									<h4 class="media-body">Patients</h4>		
                         </div>
                         <div class="col-md-2 media media-intro category" id="gratitude">
 									<h4 class="media-body">Gratitude</h4>
@@ -2816,7 +2816,6 @@ body.outlook p {
                     <p id ="message"> </p>
 					</form>
 					<br>
-                    <br>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
