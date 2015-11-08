@@ -2575,7 +2575,7 @@ body.outlook p {
                         <br>
                         <br>
                         <p class="intro-text">'.$msg.'</p>
-						<center><button id="cust" type="button" class="btn">customize <span style="color:black;" class="glyphicon glyphicon-cog"></span></button></center>
+						
 						<form id="form_data" method="POST">
 	                <div id ="times" class="overlay show">
                        
@@ -2811,6 +2811,7 @@ body.outlook p {
 							<input class="form-control" type="email" name="email" placeholder="Email" id="email">
 						</div>
 						<button type="button" onclick="register()" class="btn" style="color: black">Subscribe</button>
+                        <button id="cust" type="button" class="btn"><span style="color:black;" class="glyphicon glyphicon-cog"></span></button>
 					</div>
                     <br>
                     <p id ="message"> </p>
@@ -2842,7 +2843,7 @@ body.outlook p {
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Questions, Comments, Suggestions</h2>
-                <p><a href="mailto:info@subliminalprime.com">info@subliminalprime.com</a>
+                <p><a style="color:blue;" href="mailto:info@subliminalprime.com">info@subliminalprime.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
@@ -2869,8 +2870,17 @@ body.outlook p {
             $(document).ready(function(){
                 
                 $("#cust").click(function(){
-                    $(".show").removeClass("show");
-                    $("#cust").addClass("show");
+
+                    var times = $("#times");
+                    //alert(times.hasClass("show"));
+                    if (times.hasClass("show")){
+                         times.removeClass("show");
+                    }
+                    else{
+                        times.addClass("show");
+                    }
+                   
+                    
                 });
 
             });
