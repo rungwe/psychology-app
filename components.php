@@ -2973,7 +2973,7 @@ body.outlook p {
                 }
             if (document.getElementById("email").value==""){
                 document.getElementById("message").innerHTML="invalid email";
-                document.getElementById("message").innerHTML.style.color="red";
+                document.getElementById("message").style.color="red";
                 return false;
              }
 
