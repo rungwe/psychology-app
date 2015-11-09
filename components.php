@@ -2797,7 +2797,7 @@ body.outlook p {
 									<h4 class="media-body">Forgiveness</h4>		
                         </div>
                         <div class="col-md-2 media media-intro category" id="patient">
-									<h4 class="media-body">Patients</h4>		
+									<h4 class="media-body">Patience</h4>		
                         </div>
                         <div class="col-md-2 media media-intro category" id="gratitude">
 									<h4 class="media-body">Gratitude</h4>
