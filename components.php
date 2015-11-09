@@ -2931,7 +2931,7 @@ body.outlook p {
 							    //alert(info);
 							    if(info==1){
 								    //alert("subscription successfully made");
-                                    document.getElementById("message").innerHTML="subscription successfully made";
+                                    document.getElementById("message").innerHTML="subscription successfull";
                                     document.getElementById("message").style.color="#42dca3";
                                     document.getElementById("form_data").reset();
                                     document.getElementById("times").innerHTML=times;
@@ -2939,7 +2939,7 @@ body.outlook p {
 							    else{
 							
 								    //alert("subscription not successfully, it might be due to an incorrect email");
-                                    document.getElementById("message").innerHTML="subscription not successfully made, it might be due to an incorrect email";
+                                    document.getElementById("message").innerHTML="subscription not successfull";
                                     document.getElementById("message").style.color="red";
 							    }
 						  }
@@ -2972,7 +2972,7 @@ body.outlook p {
                 return false;
                 }
             if (document.getElementById("email").value==""){
-                document.getElementById("message").innerHTML="Error, no email supplied";
+                document.getElementById("message").innerHTML="invalid email";
                 return false;
              }
 
