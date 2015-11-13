@@ -2511,9 +2511,8 @@ body.outlook p {
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/grayscale.css" rel="stylesheet">
-    
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -2565,7 +2564,7 @@ body.outlook p {
     </nav>
 
     <!-- Intro Header -->
-    <div class="intro">
+    <header class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
@@ -2576,7 +2575,7 @@ body.outlook p {
                         <br>
                         <br>
                         <p class="intro-text">'.$msg.'</p>
-						<center><button id="cust" type="button" class="btn">customize <span style="color:black;" class="glyphicon glyphicon-cog"></span></button></center>
+						
 						<form id="form_data" method="POST">
 	                <div id ="times" class="overlay show">
                        
@@ -2798,7 +2797,7 @@ body.outlook p {
 									<h4 class="media-body">Forgiveness</h4>		
                         </div>
                         <div class="col-md-2 media media-intro category" id="patient">
-									<h4 class="media-body">Patients</h4>		
+									<h4 class="media-body">Patience</h4>		
                         </div>
                         <div class="col-md-2 media media-intro category" id="gratitude">
 									<h4 class="media-body">Gratitude</h4>
@@ -2812,6 +2811,7 @@ body.outlook p {
 							<input class="form-control" type="email" name="email" placeholder="Email" id="email">
 						</div>
 						<button type="button" onclick="register()" class="btn" style="color: black">Subscribe</button>
+                        <button id="cust" type="button" class="btn"><span style="color:black;" class="glyphicon glyphicon-cog"></span></button>
 					</div>
                     <br>
                     <p id ="message"> </p>
@@ -2824,7 +2824,7 @@ body.outlook p {
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
@@ -2843,7 +2843,7 @@ body.outlook p {
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Questions, Comments, Suggestions</h2>
-                <p><a href="mailto:info@subliminalprime.com">info@subliminalprime.com</a>
+                <p><a style="color:blue;" href="mailto:info@subliminalprime.com">info@subliminalprime.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
@@ -2870,8 +2870,17 @@ body.outlook p {
             $(document).ready(function(){
                 
                 $("#cust").click(function(){
-                    $(".show").removeClass("show");
-                    $("#cust").addClass("show");
+
+                    var times = $("#times");
+                    //alert(times.hasClass("show"));
+                    if (times.hasClass("show")){
+                         times.removeClass("show");
+                    }
+                    else{
+                        times.addClass("show");
+                    }
+                   
+                    
                 });
 
             });
@@ -2922,7 +2931,7 @@ body.outlook p {
 							    //alert(info);
 							    if(info==1){
 								    //alert("subscription successfully made");
-                                    document.getElementById("message").innerHTML="subscription successfully made";
+                                    document.getElementById("message").innerHTML="subscription successfull";
                                     document.getElementById("message").style.color="#42dca3";
                                     document.getElementById("form_data").reset();
                                     document.getElementById("times").innerHTML=times;
@@ -2930,7 +2939,7 @@ body.outlook p {
 							    else{
 							
 								    //alert("subscription not successfully, it might be due to an incorrect email");
-                                    document.getElementById("message").innerHTML="subscription not successfully made, it might be due to an incorrect email";
+                                    document.getElementById("message").innerHTML="subscription not successfull";
                                     document.getElementById("message").style.color="red";
 							    }
 						  }
@@ -2963,7 +2972,8 @@ body.outlook p {
                 return false;
                 }
             if (document.getElementById("email").value==""){
-                document.getElementById("message").innerHTML="Error, no email supplied";
+                document.getElementById("message").innerHTML="invalid email";
+                document.getElementById("message").style.color="red";
                 return false;
              }
 
