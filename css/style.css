@@ -25,11 +25,6 @@
     width: auto;
 }
 
-@media (min-width : 500px) {
-    .form-inline .form-control {
-        width: 400px;
-    }
-}
 .media{
     margin-top: 20px;
     background: transperent;
