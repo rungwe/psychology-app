@@ -22,7 +22,13 @@
 .form-inline .form-control {
     border: 0 none;
     display: inline-block;
-    width: 400px;
+    max-width: 400px;
+}
+
+@media(min-width:768px) {
+    .form-inline .form-control {
+        width: 400px;
+    }
 }
 .media{
     margin-top: 20px;
