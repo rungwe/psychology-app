@@ -22,12 +22,12 @@
 .form-inline .form-control {
     border: 0 none;
     display: inline-block;
-    width: 400px;
+    width: auto;
 }
 
-@media only screen and (max-width : 450px) {
+@media (min-width : 500px) {
     .form-inline .form-control {
-        width: auto;
+        width: 400px;
     }
 }
 .media{
