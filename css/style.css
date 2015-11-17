@@ -29,6 +29,9 @@
     .form-inline .form-control {
         width: auto;
     }
+    #scroll-dwn{
+        display: none;
+    }
 }
 
 .media{

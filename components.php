@@ -2551,7 +2551,7 @@ body.outlook p {
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Abou</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -2817,7 +2817,7 @@ body.outlook p {
                     <p id ="message"> </p>
 					</form>
 					<br>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <a id="scroll-dwn" href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
