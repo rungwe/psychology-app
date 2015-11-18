@@ -2827,15 +2827,97 @@ body.outlook p {
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Psychology App</h2>
-                <p>This is a psychology application to conduct a survey for a particular research </p>
-                <p>The results of this survey are to benefit the society </p>
-                <p>Your details will not be shared to anyone else</p>
+    <section id="about" class="container content-section">
+        <div class="panel-group" id="accordion">
+            <h2>FAQ</h2>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What is subliminal priming?</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        Subliminal priming is a stimulation on the unconscious mind that increases the probability of a later occurrence 
+                        as well as a related cognitive goal. Subliminal priming is commonly used in the advertising industry, where a certain 
+                        image, sound or phrase will activate a certain desire among the subject. SubliminalPrime uses “scrambled sentences” 
+                        to achieve personal development goals (e.g. being more confident, happy, patient, etc.).
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">What evidence is there that subliminal priming works?</a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Leading scientists, psychologists and thinkers have written about the influence of scrambled sentence tests in 
+                        subliminal priming. See this link for more information: 
+                            <a href="http://www.psych-it.com.au/Psychlopedia/article.asp?id=109">http://www.psych-it.com.au/Psychlopedia/article.asp?id=109</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Are my details safe?</a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Absolutely, your email address is not shared with any third parties and no additional information is requested 
+                        by the website.
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">How do I subscribe for the service?</a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        SubliminalPrime makes every effort to make your “subliminal” experience as tailored as possible. You can sign up 
+                        for our “Standard” service, that will send you emails from your selected category, everyday, at 08:00, local time. 
+                        You can also “Customize” the service, receiving the emails on specific days/times. 
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">How do I unsubscribe from the service?</a>
+                    </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        If you wish to unsubscribe from the service, please click the “Unsubscribe” link within any of the emails you receive 
+                        from SubliminalPrime. 
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Can I select different “Primer” categories?</a>
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Yes. Simply refresh the homepage and then select a different category, followed by your email address.  
+                    </div>
+                </div>
             </div>
         </div>
+
     </section>
 
     <!-- Contact Section -->
@@ -2843,7 +2925,7 @@ body.outlook p {
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Questions, Comments, Suggestions</h2>
-                <p><a style="color:blue;" href="mailto:info@subliminalprime.com">info@subliminalprime.com</a>
+                <p><a href="mailto:info@subliminalprime.com">info@subliminalprime.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
