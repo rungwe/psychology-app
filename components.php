@@ -2854,8 +2854,7 @@ body.outlook p {
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse">
                     <div class="panel-body">
-                        Leading scientists, psychologists and thinkers have written about the influence of scrambled sentence tests in 
-                        subliminal priming. See this link for more information: 
+                        See this link for more information: 
                             <a href="http://www.psych-it.com.au/Psychlopedia/article.asp?id=109">http://www.psych-it.com.au/Psychlopedia/article.asp?id=109</a>
                     </div>
                 </div>
