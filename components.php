@@ -1633,7 +1633,7 @@ body.outlook p {
                         <tr>
                           <td align="center">
                             <center>
-                              <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="http://ec2-52-88-165-65.us-west-2.compute.amazonaws.com/unsubscribe.php?email='.$email.'">Unsubscribe</a></p>
+                              <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="http://subliminalprime.com/unsubscribe.php?email='.$email.'">Unsubscribe</a></p>
                             </center>
                           </td>
                           <td class="expander"></td>
@@ -2425,7 +2425,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td class="panel">
-                            <p><a href="http://ec2-52-88-165-65.us-west-2.compute.amazonaws.com/verification.php?email='.$email.'">Click here</a> to verify your email address.</p>
+                            <p><a href="http://subliminalprime.com/verification.php?email='.$email.'">Click here</a> to verify your email address.</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
