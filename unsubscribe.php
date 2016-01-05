@@ -11,7 +11,7 @@
     $response = $stmt->execute();
 		
 		if($response){
-		    echo main_page("your email address has been successfully unsubscribe, feel free to subscribe any time");
+		    echo main_page("You have successfully unsubscribed to Subliminal Prime, feel free to subscribe at any time");
 		}
 		else{
 			echo main_page("An error occured, retry to unsubscribe");
