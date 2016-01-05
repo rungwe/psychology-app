@@ -2980,7 +2980,7 @@ body.outlook p {
 			}
 				
 			var form = document.getElementById("form_data");
-            form.action="subscription.php";
+            form.action="subscribe.php";
 			var formData = new FormData(form);
 			
 			var xmlhttp;
