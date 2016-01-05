@@ -773,7 +773,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h1 style="padding-top: 20px">Hi,</h1>
+                            <h1 style="padding-top: 20px">Dear user,</h1>
                 						<p class="lead" style="padding-top: 15px">You are receiving this email because you have updated your preference.</p>
                 						<p class="lead">This email was sent to you as a confirmation.</p>
                           </td>
@@ -793,7 +793,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td style="padding-top: 20px">
-                            <p class="lead">Thanks,<br>Subliminal Prime Team</p>
+                            <p class="lead">Thank you,<br>Subliminal Prime Team</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -1589,7 +1589,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h1 style="padding-top: 20px">Hi,</h1>
+                            <h1 style="padding-top: 20px">Dear user,</h1>
                 			 <h4>Here are the sentences for '.$category.'.</h4>	
                               <br>
                               <p class="lead">1) '.$questions[0].'</p>
@@ -1615,7 +1615,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <p class="lead">Thanks,<br>Subliminal Prime Team</p>
+                            <p class="lead">Thank you,<br>Subliminal Prime Team</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -1633,7 +1633,7 @@ body.outlook p {
                         <tr>
                           <td align="center">
                             <center>
-                              <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="http://subliminalprime.com/unsubscribe.php?email='.$email.'">Unsubscribe</a></p>
+                              <p style="text-align:center;"><a href="http://subliminalprime.com/unsubscribe.php?email='.$email.'">Unsubscribe</a></p>
                             </center>
                           </td>
                           <td class="expander"></td>
@@ -2442,7 +2442,7 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td style="padding-top: 20px">
-                            <p class="lead">Thanks,<br>Subliminal Prime Team</p>
+                            <p class="lead">Thank you,<br>Subliminal Prime Team</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -2451,7 +2451,7 @@ body.outlook p {
                     </td>
                   </tr>
                 </table>
-
+                <!--
                 <table class="row" style="padding-bottom: 20px">
                   <tr>
                     <td class="wrapper last">
@@ -2470,6 +2470,7 @@ body.outlook p {
                     </td>
                   </tr>
                 </table>
+                -->
 
               <!-- container end below -->
               </td>
