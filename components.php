@@ -2406,9 +2406,9 @@ body.outlook p {
                       <table class="twelve columns">
                         <tr>
                           <td>
-                            <h1 style="padding-top: 20px">Hi,</h1>
-                						<p class="lead" style="padding-top: 15px">You are receiving this email because you have just subscribed to Subliminal Prime. If you did not subscribe to Subliminal Prime, you can safely ignore this email.</p>
-                						<p class="lead">This email was sent to you in order for you to verify it.</p>
+                            <h1 style="padding-top: 20px">Dear user,</h1>
+                						<p class="lead" style="padding-top: 15px">Thank you for subscribing to SubliminalPrime.</p>
+                						<p class="lead">Please confirm your email address by clicking on the link below.</p>
                           </td>
                           <td class="expander"></td>
                         </tr>
@@ -2519,13 +2519,6 @@ body.outlook p {
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 </head>
 
@@ -2924,17 +2917,14 @@ body.outlook p {
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Questions, Comments, Suggestions</h2>
-                <p><a href="mailto:info@subliminalprime.com">info@subliminalprime.com</a>
+                <p><a href="mailto:joshpalfreman@gmail.com">info@subliminalprime.com</a>
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com" class="btn btn-default btn-lg"><i class="fa fa-twitter-square fa-fw" style="color:#4099FF"></i> <span class="network-name">Twitter</span></a>
+                        <a href="https://twitter.com/primesubliminal" class="btn btn-default btn-lg"><i class="fa fa-twitter-square fa-fw" style="color:#4099FF"></i> <span class="network-name">Twitter</span></a>
                     </li>
                     <li>
-                        <a href="https://facebook.com" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw " style="color:#3B5998"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com" class="btn btn-default btn-lg"><i class="fa fa-google-plus-square fa-fw" style="color:#D34836"></i> <span class="network-name">Google+</span></a>
+                        <a href="https://facebook.com/subliminalprime" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw " style="color:#3B5998"></i> <span class="network-name">Facebook</span></a>
                     </li>
                 </ul>
             </div>
@@ -3012,7 +3002,7 @@ body.outlook p {
 							    //alert(info);
 							    if(info==1){
 								    //alert("subscription successfully made");
-                                    document.getElementById("message").innerHTML="subscription successfull";
+                                    document.getElementById("message").innerHTML="subscription successful";
                                     document.getElementById("message").style.color="#42dca3";
                                     document.getElementById("form_data").reset();
                                     document.getElementById("times").innerHTML=times;

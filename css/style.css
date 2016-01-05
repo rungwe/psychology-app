@@ -1,4 +1,6 @@
-
+.icon{
+    background-image: url(../img/icon.png);
+}
 .overlay{
     padding-top: 30px;
 }
