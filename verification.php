@@ -12,7 +12,7 @@
     $response = $stmt->execute();
 		
 		if($response){
-			echo main_page("your email address has been successfully verified, to change your times simply re subscribe with desired times");
+			echo main_page("Your email address has been successfully verified, to change your times simply re-subscribe with desired times.");
 		}
 		else{
 			echo main_page("Something went wrong, try again");
