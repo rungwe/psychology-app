@@ -2493,8 +2493,8 @@ body.outlook p {
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i><img src="img/icon.png" height="50" width="50"></i>  <span class="light">Subliminal</span> Prime
+                <a class="navbar-brand page-scroll" href="#page-top" style="margin-top:-80px;">
+                    <img src="img/main.png"  width="250">
                 </a>
             </div>
 
