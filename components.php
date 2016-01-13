@@ -2883,10 +2883,10 @@ body.outlook p {
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/primesubliminal" class="btn btn-default btn-lg"><i class="fa fa-twitter-square fa-fw" style="color:#4099FF"></i> <span class="network-name">Twitter</span></a>
+                        <a href="https://twitter.com/primesubliminal" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter-square fa-fw" style="color:#4099FF"></i> <span class="network-name">Twitter</span></a>
                     </li>
                     <li>
-                        <a href="https://facebook.com/subliminalprime" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw " style="color:#3B5998"></i> <span class="network-name">Facebook</span></a>
+                        <a href="https://facebook.com/subliminalprime" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw " style="color:#3B5998"></i> <span class="network-name">Facebook</span></a>
                     </li>
                 </ul>
             </div>
