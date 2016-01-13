@@ -2809,8 +2809,7 @@ body.outlook p {
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse">
                     <div class="panel-body">
-                        See this link for more information: 
-                            <a href="http://www.psych-it.com.au/Psychlopedia/article.asp?id=109">http://www.psych-it.com.au/Psychlopedia/article.asp?id=109</a>
+                        See this <a href="http://www.psych-it.com.au/Psychlopedia/article.asp?id=109">link</a> for more information.
                     </div>
                 </div>
             </div>
