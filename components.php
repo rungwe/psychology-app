@@ -2494,7 +2494,7 @@ body.outlook p {
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i><img src="img/icon.png" height="50" width="50"></i>  <span class="light">Subliminal</span> Prime
+                    <i><img src="img/icon.png" height="37" width="37"></i>  <span class="light">Subliminal</span> Prime
                 </a>
             </div>
 
