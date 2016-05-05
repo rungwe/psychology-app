@@ -3973,448 +3973,409 @@ ul li {
         
         $page='<!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="img/icon.png"/>
+<title>Subliminal Prime</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="img/icon.png"/>
-    <title>Subliminal Prime</title>
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/grayscale.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <script src="js/jquery.js"></script>
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<script src="js/jquery.js"></script>
 </head>
 
 <body id="page-top" onload="init()" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top" style="margin-top:-80px;">
-                    <img src="img/main.png"  width="250">
-                </a>
-            </div>
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+      <a class="navbar-brand page-scroll" href="#page-top"> <img src="img/main.png"  width="360"> </a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+        <li> <a href="#page-top">Home</a> </li>
+        <li> <a class="page-scroll" href="#about">FAQ</a> </li>
+        <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container --> 
+</nav>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <p class="intro-text">'.$msg.'</p>
-						
-						<form id="form_data" method="POST">
-	                <div id ="times" class="overlay show">
-                       
-		                <span>Mon:</span>
-		                <select id="mon" class="form-control" name="mon">
-		                 	<option value="none">None</option>
-		                 	<option value="0">00:00</option>
-							<option value="1">01:00</option>
-							<option value="2">02:00</option>
-							<option value="3">03:00</option>
-							<option value="4">04:00</option>
-							<option value="5">05:00</option>
-							<option value="6">06:00</option>
-							<option value="7">07:00</option>
-							<option value="8" selected>08:00</option>
-							<option value="9">09:00</option>
-							<option value="10">10:00</option>
-							<option value="11">11:00</option>
-							<option value="12">12:00</option>
-							<option value="13">13:00</option>
-							<option value="14">14:00</option>
-							<option value="15">15:00</option>
-							<option value="16">16:00</option>
-							<option value="17">17:00</option>
-							<option value="18">18:00</option>
-							<option value="19">19:00</option>
-							<option value="20">20:00</option>
-							<option value="21">21:00</option>
-							<option value="22">22:00</option>
-							<option value="23">23:00</option>
-						</select>
-
-		                <span>Tues:</span>
-		                <select id="tue" class="form-control" name="tue">
-		                 	<option value="none">None</option>
-		                 	<option value="0">00:00</option>
-							<option value="1">01:00</option>
-							<option value="2">02:00</option>
-							<option value="3">03:00</option>
-							<option value="4">04:00</option>
-							<option value="5">05:00</option>
-							<option value="6">06:00</option>
-							<option value="7">07:00</option>
-							<option value="8" selected>08:00</option>
-							<option value="9">09:00</option>
-							<option value="10">10:00</option>
-							<option value="11">11:00</option>
-							<option value="12">12:00</option>
-							<option value="13">13:00</option>
-							<option value="14">14:00</option>
-							<option value="15">15:00</option>
-							<option value="16">16:00</option>
-							<option value="17">17:00</option>
-							<option value="18">18:00</option>
-							<option value="19">19:00</option>
-							<option value="20">20:00</option>
-							<option value="21">21:00</option>
-							<option value="22">22:00</option>
-							<option value="23">23:00</option>
-						</select>
-
-		                <span>Wed:</span>
-		                <select id="wed" class="form-control" name="wed">
-		                 	<option value="none">None</option>
-		                 	<option value="0">00:00</option>
-							<option value="1">01:00</option>
-							<option value="2">02:00</option>
-							<option value="3">03:00</option>
-							<option value="4">04:00</option>
-							<option value="5">05:00</option>
-							<option value="6">06:00</option>
-							<option value="7">07:00</option>
-							<option value="8" selected>08:00</option>
-							<option value="9">09:00</option>
-							<option value="10">10:00</option>
-							<option value="11">11:00</option>
-							<option value="12">12:00</option>
-							<option value="13">13:00</option>
-							<option value="14">14:00</option>
-							<option value="15">15:00</option>
-							<option value="16">16:00</option>
-							<option value="17">17:00</option>
-							<option value="18">18:00</option>
-							<option value="19">19:00</option>
-							<option value="20">20:00</option>
-							<option value="21">21:00</option>
-							<option value="22">22:00</option>
-							<option value="23">23:00</option>
-						</select>
-
-		                <span>Thur:</span>
-		                <select id="thu" class="form-control" name="thu">
-		                 	<option value="none">None</option>
-		                 	<option value="0">00:00</option>
-							<option value="1">01:00</option>
-							<option value="2">02:00</option>
-							<option value="3">03:00</option>
-							<option value="4">04:00</option>
-							<option value="5">05:00</option>
-							<option value="6">06:00</option>
-							<option value="7">07:00</option>
-							<option value="8" selected>08:00</option>
-							<option value="9">09:00</option>
-							<option value="10">10:00</option>
-							<option value="11">11:00</option>
-							<option value="12">12:00</option>
-							<option value="13">13:00</option>
-							<option value="14">14:00</option>
-							<option value="15">15:00</option>
-							<option value="16">16:00</option>
-							<option value="17">17:00</option>
-							<option value="18">18:00</option>
-							<option value="19">19:00</option>
-							<option value="20">20:00</option>
-							<option value="21">21:00</option>
-							<option value="22">22:00</option>
-							<option value="23">23:00</option>
-						</select>
-
-		                <span>Fri:</span>
-		                <select id="fri" class="form-control" name="fri">
-		                 	<option value="none">None</option>
-		                 	<option value="0">00:00</option>
-							<option value="1">01:00</option>
-							<option value="2">02:00</option>
-							<option value="3">03:00</option>
-							<option value="4">04:00</option>
-							<option value="5">05:00</option>
-							<option value="6">06:00</option>
-							<option value="7">07:00</option>
-							<option value="8" selected>08:00</option>
-							<option value="9">09:00</option>
-							<option value="10">10:00</option>
-							<option value="11">11:00</option>
-							<option value="12">12:00</option>
-							<option value="13">13:00</option>
-							<option value="14">14:00</option>
-							<option value="15">15:00</option>
-							<option value="16">16:00</option>
-							<option value="17">17:00</option>
-							<option value="18">18:00</option>
-							<option value="19">19:00</option>
-							<option value="20">20:00</option>
-							<option value="21">21:00</option>
-							<option value="22">22:00</option>
-							<option value="23">23:00</option>
-						</select>
-
-		                <span>Sat:</span>
-		                <select id="sat" class="form-control" name="sat">
-		                 	<option value="none">None</option>
-		                 	<option value="0">00:00</option>
-							<option value="1">01:00</option>
-							<option value="2">02:00</option>
-							<option value="3">03:00</option>
-							<option value="4">04:00</option>
-							<option value="5">05:00</option>
-							<option value="6">06:00</option>
-							<option value="7">07:00</option>
-							<option value="8" selected>08:00</option>
-							<option value="9">09:00</option>
-							<option value="10">10:00</option>
-							<option value="11">11:00</option>
-							<option value="12">12:00</option>
-							<option value="13">13:00</option>
-							<option value="14">14:00</option>
-							<option value="15">15:00</option>
-							<option value="16">16:00</option>
-							<option value="17">17:00</option>
-							<option value="18">18:00</option>
-							<option value="19">19:00</option>
-							<option value="20">20:00</option>
-							<option value="21">21:00</option>
-							<option value="22">22:00</option>
-							<option value="23">23:00</option>
-						</select>
-
-		                <span>Sun:</span>
-		                <select id="sun" class="form-control" name="sun">
-		                 	<option value="none">None</option>
-		                 	<option value="0">00:00</option>
-							<option value="1">01:00</option>
-							<option value="2">02:00</option>
-							<option value="3">03:00</option>
-							<option value="4">04:00</option>
-							<option value="5">05:00</option>
-							<option value="6">06:00</option>
-							<option value="7">07:00</option>
-							<option value="8" selected>08:00</option>
-							<option value="9">09:00</option>
-							<option value="10">10:00</option>
-							<option value="11">11:00</option>
-							<option value="12">12:00</option>
-							<option value="13">13:00</option>
-							<option value="14">14:00</option>
-							<option value="15">15:00</option>
-							<option value="16">16:00</option>
-							<option value="17">17:00</option>
-							<option value="18">18:00</option>
-							<option value="19">19:00</option>
-							<option value="20">20:00</option>
-							<option value="21">21:00</option>
-							<option value="22">22:00</option>
-							<option value="23">23:00</option>
-						</select>
-                        <input id="sel" type="hidden" name="category" value="confidence">
-                        
-	                </div>
-                    <div class="row" style="padding-top: 40px">
-                        <div class="col-md-1">
-                        </div>
-                        <div class="col-md-2 media media-intro media-border category" id="confidence">
-									<h4 class="media-body">Confidence</h4>		
-                        </div>
-                        <div class="col-md-2 media media-intro category" id="humble">
-									<h4 class="media-body">Humbleness</h4>		
-                        </div>
-                        <div class="col-md-2 media media-intro category" id="forgiveness" style="padding-left:0px; padding-right:0px;">
-									<h4 class="media-body">Forgiveness</h4>		
-                        </div>
-                        <div class="col-md-2 media media-intro category" id="patient">
-									<h4 class="media-body">Patience</h4>		
-                        </div>
-                        <div class="col-md-2 media media-intro category" id="gratitude">
-									<h4 class="media-body">Gratitude</h4>
-                        </div>
-                        <div class="col-md-1">
-                        </div>
-                    </div>
-                
-	                <div class="form-inline" role="form">
-						<div class="form-group">
-							<input class="form-control" type="email" name="email" placeholder="Email" id="email">
-						</div>
-						<button type="button" onclick="register()" class="btn" style="color: black">Subscribe</button>
-                        <button id="cust" type="button" class="btn"><span style="color:black;" class="glyphicon glyphicon-cog"></span></button>
-					</div>
-                    <br>
-                    <p id ="message"> </p>
-					</form>
-					<br>
-                        <a id="scroll-dwn" href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container content-section">
-        <div class="panel-group" id="accordion">
-            <h2>FAQ</h2>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What is subliminal priming?</a>
-                    </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                        Subliminal priming is a stimulation on the unconscious mind that increases the probability of a later occurrence 
-                        as well as a related cognitive goal. Subliminal priming is commonly used in the advertising industry, where a certain 
-                        image, sound or phrase will activate a certain desire among the subject. SubliminalPrime uses “scrambled sentences” 
-                        to achieve personal development goals (e.g. being more confident, happy, patient, etc.).
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">What evidence is there that subliminal priming works?</a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        See <a href="http://www.psych-it.com.au/Psychlopedia/article.asp?id=109" target="_blank">this</a> link for more information: 
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Are my details safe?</a>
-                    </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        Absolutely, your email address is not shared with any third parties and no additional information is requested 
-                        by the website.
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">How do I subscribe for the service?</a>
-                    </h4>
-                </div>
-                <div id="collapseFour" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        SubliminalPrime makes every effort to make your “subliminal” experience as tailored as possible. You can sign up 
-                        for our “Standard” service, that will send you emails from your selected category, everyday, at 08:00, local time. 
-                        You can also “Customize” the service, receiving the emails on specific days/times. 
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">How do I unsubscribe from the service?</a>
-                    </h4>
-                </div>
-                <div id="collapseFive" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        If you wish to unsubscribe from the service, please click the “Unsubscribe” link within any of the emails you receive 
-                        from SubliminalPrime. 
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Can I select different “Primer” categories?</a>
-                    </h4>
-                </div>
-                <div id="collapseSix" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        Yes. Simply refresh the homepage and then select a different category, followed by your email address.  
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section">
+<!-- Intro Header -->
+<header class="intro">
+  <div class="intro-body">
+    <div class="col-md-12">
+    <div class="row">
+      <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Questions, Comments, Suggestions</h2>
-                <p><a href="mailto:joshpalfreman@gmail.com">info@subliminalprime.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/primesubliminal" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter-square fa-fw" style="color:#4099FF"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://facebook.com/subliminalprime" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw " style="color:#3B5998"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                </ul>
-            </div>
+          <p class="intro-text">'.$msg.'</p>
         </div>
-    </section>
+      </div>
+      <form id="form_data" method="POST"> 
+		<h3 class="_preHed">Please select your preferences</h3>
+        <div class="choosecat">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-1"> </div>
+              <div class="col-md-2 media media-intro media-border category" id="confidence">
+                <h4 class="media-body">Confidence</h4>
+              </div>
+              <div class="col-md-2 media media-intro category" id="happiness">
+                <h4 class="media-body">Happiness</h4>
+              </div>
+              <div class="col-md-2 media media-intro category" id="forgiveness" style="padding-left:0px; padding-right:0px;">
+                <h4 class="media-body">Forgiveness</h4>
+              </div>
+              <div class="col-md-2 media media-intro category" id="patient">
+                <h4 class="media-body">Patience</h4>
+              </div>
+              <div class="col-md-2 media media-intro category" id="gratitude">
+                <h4 class="media-body">Gratitude</h4>
+              </div>
+              <div class="col-md-1"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="selector">
+        <div id ="times" class="overlay">
+          <div class="">
+            <div class="">
+              <select id="mon" class="form-control" name="mon">
+                <option value="none" selected>MONDAY</option>
+                <option value="8">DEFAULT (8am)</option>
+				<option value="none">NO SERVICE</option>
+                <option value="0">12AM</option>
+                <option value="1">1AM</option>
+                <option value="2">2AM</option>
+                <option value="3">3AM</option>
+                <option value="4">4AM</option>
+                <option value="5">5AM</option>
+                <option value="6">6AM</option>
+                <option value="7">7AM</option>
+                <option value="8">8AM</option>
+                <option value="9">9AM</option>
+                <option value="10">10AM</option>
+                <option value="11">11AM</option>
+                <option value="12">12PM</option>
+                <option value="13">1PM</option>
+                <option value="14">2PM</option>
+                <option value="15">3PM</option>
+                <option value="16">4PM</option>
+                <option value="17">5PM</option>
+                <option value="18">6PM</option>
+                <option value="19">7PM</option>
+                <option value="20">8PM</option>
+                <option value="21">9PM</option>
+                <option value="22">10PM</option>
+                <option value="23">11PM</option>
+              </select>
+              <select id="tue" class="form-control" name="tue">
+                <option value="none" selected>TUESDAY</option>
+                <option value="8">DEFAULT (8am)</option>
+				<option value="none">NO SERVICE</option>
+		<option value="0">12AM</option>
+                <option value="1">1AM</option>
+                <option value="2">2AM</option>
+                <option value="3">3AM</option>
+                <option value="4">4AM</option>
+                <option value="5">5AM</option>
+                <option value="6">6AM</option>
+                <option value="7">7AM</option>
+                <option value="8">8AM</option>
+                <option value="9">9AM</option>
+                <option value="10">10AM</option>
+                <option value="11">11AM</option>
+                <option value="12">12PM</option>
+                <option value="13">1PM</option>
+                <option value="14">2PM</option>
+                <option value="15">3PM</option>
+                <option value="16">4PM</option>
+                <option value="17">5PM</option>
+                <option value="18">6PM</option>
+                <option value="19">7PM</option>
+                <option value="20">8PM</option>
+                <option value="21">9PM</option>
+                <option value="22">10PM</option>
+                <option value="23">11PM</option>
+				<option value="none">NO SERVICE</option>
+              </select>
+              <select id="wed" class="form-control" name="wed">
+               <option value="none" selected>WEDNESDAY</option>
+                <option value="8">DEFAULT (8am)</option>
+				<option value="none">NO SERVICE</option>
+		<option value="0">12AM</option>
+                <option value="1">1AM</option>
+                <option value="2">2AM</option>
+                <option value="3">3AM</option>
+                <option value="4">4AM</option>
+                <option value="5">5AM</option>
+                <option value="6">6AM</option>
+                <option value="7">7AM</option>
+                <option value="8">8AM</option>
+                <option value="9">9AM</option>
+                <option value="10">10AM</option>
+                <option value="11">11AM</option>
+                <option value="12">12PM</option>
+                <option value="13">1PM</option>
+                <option value="14">2PM</option>
+                <option value="15">3PM</option>
+                <option value="16">4PM</option>
+                <option value="17">5PM</option>
+                <option value="18">6PM</option>
+                <option value="19">7PM</option>
+                <option value="20">8PM</option>
+                <option value="21">9PM</option>
+                <option value="22">10PM</option>
+                <option value="23">11PM</option>
+				<option value="none">NO SERVICE</option>
+              </select>
+              <select id="thu" class="form-control" name="thu">
+                <option value="none" selected>THURSDAY</option>
+                <option value="8">DEFAULT (8am)</option>
+				<option value="none">NO SERVICE</option>
+		<option value="0">12AM</option>
+                <option value="1">1AM</option>
+                <option value="2">2AM</option>
+                <option value="3">3AM</option>
+                <option value="4">4AM</option>
+                <option value="5">5AM</option>
+                <option value="6">6AM</option>
+                <option value="7">7AM</option>
+                <option value="8">8AM</option>
+                <option value="9">9AM</option>
+                <option value="10">10AM</option>
+                <option value="11">11AM</option>
+                <option value="12">12PM</option>
+                <option value="13">1PM</option>
+                <option value="14">2PM</option>
+                <option value="15">3PM</option>
+                <option value="16">4PM</option>
+                <option value="17">5PM</option>
+                <option value="18">6PM</option>
+                <option value="19">7PM</option>
+                <option value="20">8PM</option>
+                <option value="21">9PM</option>
+                <option value="22">10PM</option>
+                <option value="23">11PM</option>
+				<option value="none">NO SERVICE</option>
+              </select>
+              <select id="fri" class="form-control" name="fri">
+                <option value="none" selected>FRIDAY</option>
+                <option value="8">DEFAULT (8am)</option>
+				<option value="none">NO SERVICE</option>
+		<option value="0">12AM</option>
+                <option value="1">1AM</option>
+                <option value="2">2AM</option>
+                <option value="3">3AM</option>
+                <option value="4">4AM</option>
+                <option value="5">5AM</option>
+                <option value="6">6AM</option>
+                <option value="7">7AM</option>
+                <option value="8">8AM</option>
+                <option value="9">9AM</option>
+                <option value="10">10AM</option>
+                <option value="11">11AM</option>
+                <option value="12">12PM</option>
+                <option value="13">1PM</option>
+                <option value="14">2PM</option>
+                <option value="15">3PM</option>
+                <option value="16">4PM</option>
+                <option value="17">5PM</option>
+                <option value="18">6PM</option>
+                <option value="19">7PM</option>
+                <option value="20">8PM</option>
+                <option value="21">9PM</option>
+                <option value="22">10PM</option>
+                <option value="23">11PM</option>
+				<option value="none">NO SERVICE</option>
+              </select>
+              <select id="sat" class="form-control" name="sat">
+                <option value="none" selected>SATURDAY</option>
+                <option value="8">DEFAULT (8am)</option>
+				<option value="none">NO SERVICE</option>
+		<option value="0">12AM</option>
+                <option value="1">1AM</option>
+                <option value="2">2AM</option>
+                <option value="3">3AM</option>
+                <option value="4">4AM</option>
+                <option value="5">5AM</option>
+                <option value="6">6AM</option>
+                <option value="7">7AM</option>
+                <option value="8">8AM</option>
+                <option value="9">9AM</option>
+                <option value="10">10AM</option>
+                <option value="11">11AM</option>
+                <option value="12">12PM</option>
+                <option value="13">1PM</option>
+                <option value="14">2PM</option>
+                <option value="15">3PM</option>
+                <option value="16">4PM</option>
+                <option value="17">5PM</option>
+                <option value="18">6PM</option>
+                <option value="19">7PM</option>
+                <option value="20">8PM</option>
+                <option value="21">9PM</option>
+                <option value="22">10PM</option>
+                <option value="23">11PM</option>
+				<option value="none">NO SERVICE</option>
+              </select>
+              <select id="sun" class="form-control" name="sun">
+                <option value="none" selected>SUNDAY</option>
+                <option value="8">DEFAULT (8am)</option>
+				<option value="none">NO SERVICE</option>
+		<option value="0">12AM</option>
+                <option value="1">1AM</option>
+                <option value="2">2AM</option>
+                <option value="3">3AM</option>
+                <option value="4">4AM</option>
+                <option value="5">5AM</option>
+                <option value="6">6AM</option>
+                <option value="7">7AM</option>
+                <option value="8">8AM</option>
+                <option value="9">9AM</option>
+                <option value="10">10AM</option>
+                <option value="11">11AM</option>
+                <option value="12">12PM</option>
+                <option value="13">1PM</option>
+                <option value="14">2PM</option>
+                <option value="15">3PM</option>
+                <option value="16">4PM</option>
+                <option value="17">5PM</option>
+                <option value="18">6PM</option>
+                <option value="19">7PM</option>
+                <option value="20">8PM</option>
+                <option value="21">9PM</option>
+                <option value="22">10PM</option>
+                <option value="23">11PM</option>
+				<option value="none">NO SERVICE</option>
+              </select>
+              <input id="sel" type="hidden" name="category" value="confidence">
+            </div>
+			<div class="form-inline" role="form">
+          <div class="container">
+            <div class="row">
+              <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="Enter&nbsp;Email" id="email">
+              </div>
+              <button type="button" onclick="register()" class="btn">Subscribe</button>
+              <button style="display:none;" id="cust" type="button" class="btn set"><span class="glyphicon glyphicon-cog"></span></button>
+              <br>
+              <p id ="message"></p>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+        </div>
+      </form>
+      <a id="scroll-dwn" href="#about" class="btn btn-circle page-scroll" style="display:none;"> <i class="fa fa-angle-double-down animated"></i> </a> </div>
+  </div>
+  </div>
+</header>
 
-   
+<!-- About Section -->
+<section id="about" class="container content-section">
+   <div class="container">
+    <div class="row">
+  		<div class="panel-group" id="accordion">
+    <h2>FAQ</h2>
+    <div class="panel panel-default _cur_acco">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What is subliminal priming?</a> </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body"> Subliminal priming is a stimulation on the unconscious mind that increases the probability of a later occurrence 
+          as well as a related cognitive goal. Subliminal priming is commonly used in the advertising industry, where a certain 
+          image, sound or phrase will activate a certain desire among the subject. SubliminalPrime uses “scrambled sentences” 
+          to achieve personal development goals (e.g. being more confident, happy, patient, etc.). </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">What evidence is there that subliminal priming works?</a> </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body"> See <a href="http://www.psych-it.com.au/Psychlopedia/article.asp?id=109" target="_blank">this</a> link for more information: </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Are my details safe?</a> </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body"> Absolutely, your email address is not shared with any third parties and no additional information is requested 
+          by the website. </div>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-    </footer>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">How do I subscribe for the service?</a> </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse">
+        <div class="panel-body"> SubliminalPrime makes every effort to make your “subliminal” experience as tailored as possible. You can sign up 
+          for our “Standard” service, that will send you emails from your selected category, everyday, at 08:00, local time. 
+          You can also “Customize” the service, receiving the emails on specific days/times. </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">How do I unsubscribe from the service?</a> </h4>
+      </div>
+      <div id="collapseFive" class="panel-collapse collapse">
+        <div class="panel-body"> If you wish to unsubscribe from the service, please click the “Unsubscribe” link within any of the emails you receive 
+          from SubliminalPrime. </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Can I select different “Primer” categories?</a> </h4>
+      </div>
+      <div id="collapseSix" class="panel-collapse collapse">
+        <div class="panel-body"> Yes. Simply refresh the homepage and then select a different category, followed by your email address. </div>
+      </div>
+    </div>
+  </div>
+  	</div>
+  </div>
+</section>
 
-	<script>
+<!-- Contact Section -->
+<section id="contact" class="container content-section">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2>CONTACT US</h2>
+	  <h3>FOR QUESTIONS, COMMENTS, SUGGESTIONS EMAIL US AT</h3>
+      <p><a href="mailto:joshpalfreman@gmail.com">info@subliminalprime.com</a> </p>
+      <ul class="list-inline banner-social-buttons">
+	  	<li> <a href="https://facebook.com/subliminalprime" target="_blank"><i class="fa fa-facebook fa-fw " style="color:#2286c5"></i></a> </li>
+        <li> <a href="https://twitter.com/primesubliminal" target="_blank"><i class="fa fa-twitter fa-fw" style="color:#2286c5"></i></a> </li>        
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer> </footer>
+<script>
             $(document).ready(function(){
                 
                 $("#cust").click(function(){
@@ -4433,24 +4394,35 @@ ul li {
 
             });
         
-    </script>
-    <script>
+    </script> 
+<script>
         $(document).ready(function(){
             
             $(".category").click(function(){
                 $(".category").removeClass("media-border");
-              
+				$(".category").find("h4").removeClass("_cur_tab");
+				$(this).find("h4").addClass("_cur_tab");
                 $(this).addClass("media-border");
                 var category = $(this).attr("id");
                 //alert(category);
                 document.getElementById("sel").value=category;
             });
+			$("#times select").change(function(){
+				$("#email").focus();
+            });
+			$(".panel-heading").click(function(){
+				$(".panel-default").removeClass("_cur_acco");
+				$(this).parent().addClass("_cur_acco");
+            });
         });
-    </script>
-    <script>
+    </script> 
+<script>
         
-    </script>
-	<script type="text/javascript">
+    </script> 
+<script type="text/javascript">
+//var x = new Date();
+//var offset = x.getTimezoneOffset() / 60;
+// console.log(offset);
 		function register(){
 			if (!validate()){
 				return;
@@ -4477,19 +4449,22 @@ ul li {
 							 
 							    var info =xmlhttp.responseText;
 							    //alert(info);
+								console.log(info);
 							    if(info==1){
 								    //alert("subscription successfully made");
-                                    document.getElementById("message").innerHTML="subscription successful";
-                                    document.getElementById("message").style.color="#42dca3";
-                                    document.getElementById("form_data").reset();
+									var _msg ="subscription successful";
+                                    var _msgColor ="#42dca3";
+                                    //document.getElementById("form_data").reset();
                                     document.getElementById("times").innerHTML=times;
 							    }
 							    else{
 							
 								    //alert("subscription not successfully, it might be due to an incorrect email");
-                                    document.getElementById("message").innerHTML="subscription not successfull";
-                                    document.getElementById("message").style.color="red";
+                                    var _msg ="subscription not successfull";
+                                    var _msgColor ="red";
 							    }
+								document.getElementById("message").innerHTML=_msg;
+								document.getElementById("message").style.color=_msgColor;
 						  }
 					  }
 					  
@@ -4502,7 +4477,8 @@ ul li {
 
 		function validate(){
             var days = ["mon","tue","wed","thu","fri", "sat", "sun"];
-            var offset = new Date().getTimezoneOffset()/60;
+	    var offset = new Date().getTimezoneOffset()/60;
+	console.log(offset);
             document.getElementById("email").value = document.getElementById("email").value.trim();
             var counter =0;
             for (i =0; i<days.length; i++){
@@ -4533,20 +4509,17 @@ ul li {
             times = document.getElementById("times").innerHTML;
 
         }
-	</script>
-   
+	</script> 
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
+<!-- Plugin JavaScript --> 
+<script src="js/jquery.easing.min.js"></script> 
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-
+<!-- Custom Theme JavaScript --> 
+<script src="js/grayscale.js"></script>
 </body>
-
 </html>';
 
         return $page;

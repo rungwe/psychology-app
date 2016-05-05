@@ -3,11 +3,24 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+@font-face {
+	font-family: 'BEBAS';
+	src: url('../fonts/BEBAS.eot');
+	src: local('☺'), url('../fonts/BEBAS.woff') format('woff'), url('../fonts/BEBAS.ttf') format('truetype'), url('../fonts/BEBAS.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gotham-Book';
+	src: url('../fonts/Gotham-Book.eot');
+	src: local('☺'), url('../fonts/Gotham-Book.woff') format('woff'), url('../fonts/Gotham-Book.ttf') format('truetype'), url('../fonts/Gotham-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'BEBAS',Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #000;
 }
@@ -25,7 +38,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family:"BEBAS",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -63,12 +76,12 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'BEBAS',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -94,6 +107,8 @@ a:focus {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+	font-size: 20px;
+	line-height: 38px;
 }
 
 .navbar-custom .nav li a:hover {
@@ -113,7 +128,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    background-color: transparent/*rgba(255,255,255,.3)*/;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -122,10 +137,10 @@ a:focus {
 
 @media(min-width:768px) {
     .navbar-custom {
-        padding: 20px 0;
+        padding: 10px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
+        background: #000;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -133,6 +148,8 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
+		    padding-bottom: 6px;
+    padding-top: 12px;
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #000;
     }
@@ -141,11 +158,11 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: 100%;
+    height: 80%;
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/sunrise.jpg) no-repeat bottom center scroll;
+    background: url(../img/bg.jpg) no-repeat top center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -155,7 +172,7 @@ a:focus {
 
 .intro .intro-body {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .intro .intro-body .brand-heading {
@@ -242,27 +259,45 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 250px;
-    height: 100%;
+    padding-top: 50px;
+    height: auto;
     text-align: center;
 }
 
 #about {
-    padding-top:150px;
+    padding-top:50px;
     height: auto;
+	width: 100%;
+	background: #f0efef;
 }
 
 
 .btn {
     border-radius: 0;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'BEBAS',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:18px;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+	background: #171b27;
+	color:#fff;
+    padding: 7px 35px;
+    margin: 0 5px;
 }
-
+.btn:hover {
+	color:#fff;
+}
+.btn.set {
+	padding: 0px 15px;
+	margin-left:0;
+	color:#2286c5;
+	font-size:28px;
+}
+.btn.set:hover {
+	color:#2286c5;
+}
 .btn-default {
     color: white;
     background-color: transparent;
@@ -299,7 +334,7 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 footer p {
@@ -341,13 +376,29 @@ body {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 26px;
+        font-size: 23px;
+		font-weight:300;
+		letter-spacing:1px;
+		margin:0;
+		background: rgba(0,0,0,0.5);
+		margin-bottom:15px;
     }
     #about {
-        height: 100%;
+        height: auto;
     }
 }
-
+.navbar-brand.page-scroll{
+	margin-top:-112px;
+}
+@media(max-width:768px) {
+.navbar-brand.page-scroll{
+	margin-top:-12%;
+	max-width:80%;
+}
+.navbar-brand.page-scroll img{
+	width:50%;
+}
+}
 @media(max-width:480px) {
 
     .content-section {
@@ -358,5 +409,56 @@ body {
     #about {
         padding-top:100px;
     }
+	.navbar-brand.page-scroll img{
+	width:80%;
+}
 
+}
+
+.choosecat {
+	background: #171b27;
+}
+.selector {
+	background: #2286c5;
+	padding-top: 10px;
+}
+.panel-group {
+	margin-bottom:50px;
+}
+.panel-group h2 {
+	color: #171b27;
+}
+#accordion h2 {
+	color: #2286c5;
+	margin-bottom: 10px;
+}
+#accordion .panel-body {
+	letter-spacing: 1px;
+}
+.panel-group .panel {
+	border-radius:0;
+}
+.panel-default > .panel-heading {
+	color:white;
+	    background: #171b27;
+	border-radius: 0;
+}
+#contact h2 {
+	color:#2286c5;	
+}
+#contact h3 {
+font-size: 20px;
+    letter-spacing: 2px;
+}
+#contact a {
+	color:#31708f;	
+	font-family: 'Gotham-Book';
+	font-weight: 300;
+	text-decoration:underline;
+}
+#contact a:hover {
+	color:#34647C;	
+	}
+#contact a i {
+	font-size:56px;
 }

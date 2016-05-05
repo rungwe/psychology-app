@@ -1,5 +1,5 @@
 version: 1
 cron:
 - name: "cronEmail"
-url: "http://psychologyapp-env.elasticbeanstalk.com/cronjob.php"
+url: "/cronjob.php"
 schedule: "* * * * *"

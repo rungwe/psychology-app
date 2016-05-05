@@ -17,8 +17,12 @@ $(window).scroll(function() {
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
+		var targetLoc = $($anchor.attr('href')).offset().top;
+		if( $anchor.attr('href') == '#about' ){
+			targetLoc -= 60;
+		}
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: targetLoc
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });

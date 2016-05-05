@@ -1,5 +1,5 @@
 <?php
-    
+    //print_r($_POST);die;
     ini_set('display_errors',true);
 	require "components.php" ;
 	$fields = array("email","category","mon","tue","wed","thu","fri","sat","sun");
@@ -23,7 +23,7 @@
           echo $db->error;
 		  exit();
           } else {
-           // everything is good to go !. 
+           //echo 10; die; 
          }
 		foreach($fields as $field){
 			if ($_POST[$field]=="none" ){

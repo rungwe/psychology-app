@@ -3,8 +3,8 @@
 //var_dump(get_questions($category));
 function get_questions($category){
 
-        if ($category == "humble"){
-            $myfile = fopen("/var/www/html/Humble.txt", "r") or die("Unable to open file!");
+        if ($category == "happiness"){
+            $myfile = fopen("/var/www/html/Happiness.txt", "r") or die("Unable to open file!");
         }
 
         if ($category == "confidence"){

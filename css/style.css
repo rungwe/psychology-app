@@ -2,9 +2,11 @@
     background-image: url(../img/icon.png);
 }
 .overlay{
-    padding-top: 30px;
+    padding: 40px 0;
 }
-
+#times{
+	padding: 0;
+}
 .overlay span {
     font-size: 15px;
     color: white;
@@ -16,15 +18,60 @@
     display: inline-block;
     width: auto;
 }
-
+#form_data{
+    padding-top: 11px;
+    background: #2286c5;
+	border-top: 3px solid #333;
+}
+._preHed{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: black;
+}
+#times select {
+text-align-last: center; 
+text-align: center;
+-ms-text-align-last: center;
+-moz-text-align-last: center;
+text-align-last: center;
+	border: 0 !important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: #171b27 url(../img/select-arrow.png) no-repeat center bottom;
+	width: 146px;
+	text-indent: 0;
+	text-overflow: "";
+	color: #FFF;
+	    background-size: 18px 16px;
+	border-radius: 0px;
+	padding: 10px 0px 10px 0px;
+	box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
+	height:42px;
+	font-size:15px;
+	letter-spacing:1px;
+	margin: 0 3px;
+	font-family: 'Gotham-Book';
+}
+#times select.balck {
+	background-color: #171b27;
+}
+#times select.option3 {
+	border-radius: 10px 0;
+}
 .form-inline{
     padding-top: 40px;
 }
-
+#about,#contact {
+    border-top: 1px solid #171b27;
+}
 .form-inline .form-control {
     border: 0 none;
     display: inline-block;
     width: 400px;
+	font-family: 'Gotham-Book';
+	border-radius: 0;
+    padding: 20px 10px;
 }
 
 @media(max-width:480px) {
@@ -37,18 +84,18 @@
 }
 
 .media{
-    margin-top: 20px;
+    margin: 10px 0;
     background: transperent;
 }
 
 .media-intro {
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: transperent;
 }
 .media-border {
-    border: 2px solid white;
+    border: 2px solid transparent;
 }
 .media-intro .media-body {
    text-align: center;
@@ -57,7 +104,7 @@
 }
 
 .show{
-        display:none ! important;
+        display:none;
     }
 .category{
     cursor: pointer ! important;
@@ -67,8 +114,8 @@
     background-color: #000;
     font-size: 15px;
 }
-.panel-default {
-    border: solid black;
+._cur_acco {
+    border: 1px solid black;
 }
 .panel-title {
     font-size: 18px;
@@ -94,4 +141,13 @@
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+.category h4{
+    line-height: 2;
+    margin-bottom: 10px;
+	display: inline;
+}
+.category h4:hover, .media-intro ._cur_tab{
+	color: rgb(34, 134, 197);
+    border-bottom: 3px solid white;
 }
